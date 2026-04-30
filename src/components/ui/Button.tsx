@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { cn } from '@/lib/utils';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'gold' | 'outline' | 'ghost';
@@ -31,7 +30,7 @@ export default function Button({
   };
 
   return (
-    <button className={cn(base, variants[variant], sizes[size], className)} {...props}>
+    <button className={[base, variants[variant], sizes[size], className].filter(Boolean).join(' ')} {...props}>
       {children}
     </button>
   );

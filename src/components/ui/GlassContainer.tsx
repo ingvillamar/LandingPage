@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { cn } from '@/lib/utils';
 
 interface GlassContainerProps {
   children: React.ReactNode;
@@ -16,11 +15,11 @@ export default function GlassContainer({
 }: GlassContainerProps) {
   return (
     <Tag
-      className={cn(
+      className={[
         'backdrop-blur-xl border rounded-2xl',
         'bg-[rgba(22,22,22,0.7)] border-[rgba(212,175,55,0.2)]',
         className
-      )}
+      ].filter(Boolean).join(' ')}
     >
       {children}
     </Tag>
