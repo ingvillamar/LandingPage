@@ -28,7 +28,7 @@ export default function Header() {
           : 'bg-[rgba(11,11,11,0.80)] backdrop-blur-md'
       }`}
     >
-      <div className="w-full max-w-screen-xl mx-auto px-16 flex items-center justify-between h-20 gap-96">
+      <div className="w-full max-w-screen-xl mx-auto px-8 flex items-center justify-between h-20">
 
         {/* ── Logo ── */}
         <div className="flex items-center gap-4 flex-shrink-0">
@@ -45,14 +45,14 @@ export default function Header() {
         </div>
 
         {/* ── Nav + Botón juntos a la derecha ── */}
-        <div className="hidden md:flex items-center gap-16 mr-20">
+        <div className="hidden md:flex items-center gap-6">
 
           {/* Nav links */}
-          <nav className="flex items-center gap-10">
+          <nav className="flex items-center gap-6">
             {navLinks.map(({ label, dropdown }) => (
               <button
                 key={label}
-                className="flex items-center gap-1.5 text-2xl font-medium text-[#E0E0E0] hover:text-[#D4AF37] transition-colors duration-200"
+                className="flex items-center gap-1 text-sm font-medium text-[#E0E0E0] hover:text-[#D4AF37] transition-colors duration-200"
               >
                 {label}
                 {dropdown && (
@@ -69,7 +69,7 @@ export default function Header() {
          <button
            className="inline-flex items-center 
               px-6 py-2
-              text-2xl font-semibold 
+              text-sm font-semibold 
               text-[#D4AF37] 
               border-2 border-[#D4AF37] 
               rounded-lg 
