@@ -9,34 +9,15 @@ export default function Hero() {
   ];
 
   return (
-    // 1. Usamos min-h-screen para evitar que el alto fijo bloquee el movimiento del contenido
     <section className="relative w-full min-h-screen bg-[#050505] flex flex-col">
       
-      {/* 2. ESPACIADOR REFORZADO: Usamos h-[140px] para forzar una bajada mayor que el Header */}
       <div className="h-[120px] md:h-[150px] w-full block" />
 
-      {/* ── IMAGEN DE FONDO ── */}
-      <div className="absolute inset-0 z-0 h-full w-full max-w-[1440px] mx-auto px-6 md:px-12 pointer-events-none">
-        <div className="relative w-full h-full flex justify-start items-center pl-[45%]">
-          <div className="relative w-[280px] lg:w-[30%] h-[50%] transition-all duration-500">
-            <Image
-              src="/images/jean-hero.png"
-              alt="Architek Specialist"
-              fill
-              priority
-              sizes="(max-width: 768px) 280px, 35vw"
-              className="object-contain object-center opacity-100" 
-            />
-          </div>
-        </div>
-      </div>
+      {/* ── CONTENIDO PRINCIPAL + IMAGEN en fila ── */}
+      <div className="relative z-20 container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-8 mt-5">
 
-      {/* ── CONTENIDO PRINCIPAL ── */}
-      {/* 3. Eliminamos flex-1 para que el margen superior realmente empuje el div hacia abajo */}
-      <div className="relative z-20 container mx-auto px-6 md:px-12">
-        
-        {/* Añadimos un mt-10 adicional aquí para asegurar la separación visual */}
-        <div className="max-w-2xl p-10 md:p-14 rounded-[2.5rem] backdrop-blur-xl bg-black/60 border border-white/10 shadow-2xl mt-5">
+        {/* Div principal */}
+        <div className="w-full md:w-1/2 p-10 md:p-14 rounded-[2.5rem] backdrop-blur-xl bg-black/60 border border-white/10 shadow-2xl">
           
           <p className="text-sm md:text-base font-bold tracking-[0.4em] text-yellow-500 mb-4 uppercase">
             Sin Humo - Sin Magia
@@ -68,6 +49,19 @@ export default function Hero() {
             Explore Our Services
           </button>
         </div>
+
+        {/* Imagen al lado */}
+        <div className="hidden md:block w-1/2 relative h-[480px]">
+          <Image
+            src="/images/jean-hero.png"
+            alt="Architek Specialist"
+            fill
+            priority
+            sizes="50vw"
+            className="object-contain object-center"
+          />
+        </div>
+
       </div>
 
       {/* Capa de degradado */}
