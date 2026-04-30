@@ -17,8 +17,8 @@ export default function Hero() {
 
       {/* ── IMAGEN DE FONDO ── */}
       <div className="absolute inset-0 z-0 h-full w-full max-w-[1440px] mx-auto px-6 md:px-12 pointer-events-none">
-        <div className="relative w-full h-full flex justify-end items-center">
-          <div className="relative w-[280px] lg:w-[35%] h-[50%] transition-all duration-500">
+        <div className="relative w-full h-full flex justify-start items-center pl-[45%]">
+          <div className="relative w-[280px] lg:w-[30%] h-[50%] transition-all duration-500">
             <Image
               src="/images/jean-hero.png"
               alt="Architek Specialist"
