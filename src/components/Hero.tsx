@@ -14,10 +14,10 @@ export default function Hero() {
       <div className="h-[120px] md:h-[150px] w-full block" />
 
       {/* ── CONTENIDO PRINCIPAL + IMAGEN en fila ── */}
-      <div className="relative z-20 container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-8 mt-5">
+      <div className="relative z-20 w-full px-6 md:px-12 flex flex-col md:flex-row items-center gap-4 mt-5">
 
         {/* Div principal */}
-        <div className="w-full md:w-1/2 p-10 md:p-14 rounded-[2.5rem] backdrop-blur-xl bg-black/60 border border-white/10 shadow-2xl">
+        <div className="w-full md:w-[45%] p-8 md:p-10 rounded-[2.5rem] backdrop-blur-xl bg-black/60 border border-white/10 shadow-2xl">
           
           <p className="text-sm md:text-base font-bold tracking-[0.4em] text-yellow-500 mb-4 uppercase">
             Sin Humo - Sin Magia
@@ -51,7 +51,7 @@ export default function Hero() {
         </div>
 
         {/* Imagen al lado */}
-        <div className="hidden md:block w-1/2 relative h-[480px]">
+        <div className="hidden md:block w-[30%] relative h-[480px]">
           <Image
             src="/images/jean-hero.png"
             alt="Architek Specialist"
