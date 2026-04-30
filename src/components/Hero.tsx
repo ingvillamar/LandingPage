@@ -38,16 +38,16 @@ export default function Hero() {
         {/* Añadimos un mt-10 adicional aquí para asegurar la separación visual */}
         <div className="max-w-2xl p-10 md:p-14 rounded-[2.5rem] backdrop-blur-xl bg-black/60 border border-white/10 shadow-2xl mt-5">
           
-          <p className="text-xl md:text-lg font-bold tracking-[0.4em] text-yellow-500 mb-6 uppercase">
+          <p className="text-sm md:text-base font-bold tracking-[0.4em] text-yellow-500 mb-4 uppercase">
             Sin Humo - Sin Magia
           </p>
           
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-8 leading-[1.05] text-white">
+          <h1 className="text-3xl md:text-5xl font-extrabold mb-6 leading-[1.05] text-white">
             Arquitectura Real <br />
             <span className="text-yellow-500">a Pulso</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-200 mb-10 leading-relaxed max-w-xl">
+          <p className="text-base md:text-lg text-gray-200 mb-8 leading-relaxed max-w-xl">
             Arquitectura AI para impulsar el crecimiento real de tu negocio
           </p>
 
