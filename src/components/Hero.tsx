@@ -51,7 +51,7 @@ export default function Hero() {
         </div>
 
         {/* Imagen al lado */}
-        <div className="hidden md:block w-[30%] relative h-[480px]">
+        <div className="hidden md:flex flex-1 relative h-[480px] justify-center">
           <Image
             src="/images/jean-hero.png"
             alt="Architek Specialist"
