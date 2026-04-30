@@ -32,13 +32,13 @@ export default function Header() {
 
         {/* ── Logo ── */}
         <div className="flex items-center gap-2 flex-shrink-0">
-          <svg width="36" height="36" viewBox="0 0 34 34" fill="none">
+          <svg width="44" height="44" viewBox="0 0 34 34" fill="none">
             <path d="M17 2L31 9.5V24.5L17 32L3 24.5V9.5L17 2Z"
               stroke="#D4AF37" strokeWidth="1.5" />
             <path d="M17 8L27 13.5V22.5L17 28L7 22.5V13.5L17 8Z"
               fill="#D4AF37" />
           </svg>
-          <span className="text-sm font-bold tracking-widest">
+          <span className="text-base font-bold tracking-widest">
             <span className="text-[#F5F5F0]">ARCHITEK AI</span>{' '}
             <span className="text-[#888] font-normal">SOLUTIONS</span>
           </span>
@@ -52,7 +52,7 @@ export default function Header() {
             {navLinks.map(({ label, dropdown }) => (
               <button
                 key={label}
-                className="flex items-center gap-1 text-sm font-medium text-[#E0E0E0] hover:text-[#D4AF37] transition-colors duration-200"
+                className="flex items-center gap-1 text-base font-medium text-[#E0E0E0] hover:text-[#D4AF37] transition-colors duration-200"
               >
                 {label}
                 {dropdown && (
@@ -69,7 +69,7 @@ export default function Header() {
          <button
            className="inline-flex items-center 
               px-6 py-2
-              text-sm font-semibold 
+              text-base font-semibold 
               text-[#D4AF37] 
               border-2 border-[#D4AF37] 
               rounded-lg 
