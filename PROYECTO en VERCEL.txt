@@ -1,0 +1,38 @@
+=== Copilot analiza y ejecuta lo siguiente en VERCEL ===
+Instalar el pquete de Vercel cli.
+🚀 Pasos para desplegar tu proyecto en Vercel
+1.- Accede a Vercel:
+    VERCEL ID: FO7HLMZAah90tuTOAXX6meed
+
+    Entra a la cuenta en Vercel 
+    Si aún no lo has hecho!, conecta tu cuenta de GitHub desde el panel de Vercel.
+
+2. Importa el repositorio
+
+    Haz clic en “Add New Project”. 
+    Selecciona tu repositorio de GitHub donde está tu proyecto Next.js ==> LandinPage
+    Vercel detectará automáticamente que es un proyecto Next.js y configurará el build.
+
+3.- Configura las variables de entorno
+
+    El proyecto usa claves (por ejemplo, API keys, Supabase, Strapi, etc.), ve a Settings → Environment Variables y añade las mismas variables que se tienes en .env.local
+    Recuerda que en producción se usan process.env.
+
+4.- Build & Output
+
+Vercel usará por defecto:
+    Build Command: next build
+        Output Directory: .vercel/output (Next.js 13+ con App Router y Turbopack ya está soportado).
+    
+    No necesitas cambiar nada salvo que tengas configuraciones personalizadas.
+
+5.- Deploy automático
+
+    Cada vez que hagas git push a tu rama principal (ej. main o master), Vercel desplegará automáticamente.
+
+    También puedes crear Preview Deployments en ramas feature para probar antes de fusionar.
+
+6.- Verifica tu dominio
+
+    Vercel te dará un dominio temporal (creandosoluciones.vercel.app)
+    

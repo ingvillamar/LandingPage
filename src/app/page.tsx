@@ -1,6 +1,5 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-//import BarraEstadisticas from "@/components/BarraEstadisticas";
 import Projects from "@/components/Projects";
 import ChatAI from "@/components/ChatAI";
 
