@@ -31,24 +31,24 @@ export default function Header() {
       <div className="w-full max-w-screen-xl mx-auto px-8 flex items-center justify-between h-20">
 
         {/* ── Logo ── */}
-        <div className="flex items-center gap-4 flex-shrink-0">
-          <svg width="68" height="68" viewBox="0 0 34 34" fill="none">
+        <div className="flex items-center gap-2 flex-shrink-0">
+          <svg width="36" height="36" viewBox="0 0 34 34" fill="none">
             <path d="M17 2L31 9.5V24.5L17 32L3 24.5V9.5L17 2Z"
               stroke="#D4AF37" strokeWidth="1.5" />
             <path d="M17 8L27 13.5V22.5L17 28L7 22.5V13.5L17 8Z"
               fill="#D4AF37" />
           </svg>
-          <span className="text-2xl font-bold tracking-widest">
+          <span className="text-sm font-bold tracking-widest">
             <span className="text-[#F5F5F0]">ARCHITEK AI</span>{' '}
             <span className="text-[#888] font-normal">SOLUTIONS</span>
           </span>
         </div>
 
         {/* ── Nav + Botón juntos a la derecha ── */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-4">
 
           {/* Nav links */}
-          <nav className="flex items-center gap-6">
+          <nav className="flex items-center gap-4">
             {navLinks.map(({ label, dropdown }) => (
               <button
                 key={label}
