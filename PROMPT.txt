@@ -1,0 +1,23 @@
+Debajo del HERO vamos a crear un <SECTION> que es una Barra de Estadisticas 
+con un <DIV> que tendra 4 imagenes que serán reducidas a lo mas minimo..
+1.- Cliente Feliz
+2.- Proyectos Entregados
+3.- Productos Premium
+4.- Países Atendidos
+
+Crea está <SECTION> en base s los descrito y con el mismo estilo y formato de los
+elementos ya creados como el HEADER y HERO.
+
+___________________________________________________________________________________
+Ahora tengo la penúltima SECCION que tendrá tres <DIV>.
+1.- Un <Div> para un código QR.
+2.- Un <Div> para Chat por WhatsApp.
+4.- Un <Div> para llamado a la Acción al usuario. 
+3.- Un <Div> para Chat con AI.
+
+Crea un Diseño de esta <SECTION> manteniendo el estilo ya establecido anteriormente.
+En medio existe un resltado de amarillo que será llenado por el <DIV> de Leyenda
+haciendo enfasis que usen estos <elementos> Tanto QR como los 2 CHATS, aquí dale una
+descripción inteligente y creativa para el uso de estos elemenstos por parte del
+usuario.
+

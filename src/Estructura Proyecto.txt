@@ -1,0 +1,19 @@
+src/app/
+ ----- layout.tsx (permanece aquí)
+ ----- page.tsx (permanece aquí)
+ ----- globals.css (permanece aquí)
+src/components/
+ ----- Header.tsx
+ ----- Hero.tsx
+ ----- Projects.tsx
+ ----- ChatAI.tsx
+ ----- Footer.tsx
+src/sections/
+ ----- About.tsx
+
+src/utils/
+ ----- constants.ts
+public/
+ ----- images/
+           jean-hero.png
+
