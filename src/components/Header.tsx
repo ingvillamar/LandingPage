@@ -28,7 +28,7 @@ export default function Header() {
           : 'bg-[rgba(11,11,11,0.80)] backdrop-blur-md'
       }`}
     >
-      <div className="w-full max-w-screen-xl mx-auto px-8 flex items-center justify-between h-20">
+      <div className="w-full max-w-screen-xl mx-auto px-6 flex items-center h-20 gap-8">
 
         {/* ── Logo ── */}
         <div className="flex items-center gap-2 flex-shrink-0">
