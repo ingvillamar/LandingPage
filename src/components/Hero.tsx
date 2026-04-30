@@ -51,16 +51,24 @@ export default function Hero() {
         </div>
 
         {/* Imagen al lado */}
-        <div className="hidden md:flex flex-1 relative h-[480px] justify-start">
+      <div className="hidden md:flex flex-1 relative h-[500px] justify-start">         
+        {/* 1. Cambiamos el translate negativo por uno positivo para ALEJARLA un poco del texto */}
+        <div className="relative w-full h-full translate-x-2 lg:translate-x-12">
+          {/* 
+            - Si quieres que se separe MÁS: sube el número (ej: translate-x-20)
+            - Si quieres que se acerque un poquito: baja el número (ej: translate-x-5)
+          */}
+          
           <Image
             src="/images/jean-hero.png"
             alt="Architek Specialist"
             fill
             priority
             sizes="50vw"
-            className="object-contain object-center"
+            className="object-contain object-left" 
           />
         </div>
+      </div>
 
       </div>
 
